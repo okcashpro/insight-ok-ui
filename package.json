@@ -1,34 +1,61 @@
 {
   "name": "insight-ui",
-  "description": "A bitcoin block explorer and API.",
-  "version": "1.0.0",
-  "repository": "git://github.com/bitpay/insight.git",
+  "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the Okcash network and build your own services with it.",
+  "version": "0.4.0",
+  "repository": "git://github.com/okcashpro/insight-ui.git",
+  "contributors": [
+    {
+      "name": "Matias Alejo Garcia",
+      "email": "ematiu@gmail.com"
+    },
+    {
+      "name": "Manuel Araoz",
+      "email": "manuelaraoz@gmail.com"
+    },
+    {
+      "name": "Mario Colque",
+      "email": "colquemario@gmail.com"
+    },
+    {
+      "name": "Gustavo Cortez",
+      "email": "cmgustavo83@gmail.com"
+    },
+    {
+      "name": "Juan Ignacio Sosa Lopez",
+      "email": "bechilandia@gmail.com"
+    },
+    {
+      "name": "Oktoshi",
+      "email": "devteam@okcash.co"
+    }
+  ],
   "bugs": {
-    "url": "https://github.com/bitpay/insight/issues"
+    "url": "https://github.com/okcashpro/insight-ui/issues"
   },
-  "homepage": "https://github.com/bitpay/insight",
+  "homepage": "https://github.com/okcashpro/insight-ui",
   "license": "MIT",
   "keywords": [
     "insight",
-    "insight-ui",
     "blockchain",
-    "block explorer",
-    "bitcoin",
+    "blockexplorer",
+    "okcash",
     "bitcore",
-    "API"
+    "front-end"
   ],
   "bitcoreNode": "bitcore-node",
-  "scripts": {
-    "postinstall": "run-s install-app",
-    "install-app": "cd app && npm install",
-    "start": "run-s watch-app",
-    "watch-app": "cd app && npm start",
-    "test": "cd app && ng test --code-coverage",
-    "test:ci": "cd app && npm run test:ci"
+  "dependencies": {
   },
-  "dependencies": {},
   "devDependencies": {
-    "@angular/cli": "^1.7.3",
-    "npm-run-all": "^4.0.2"
+    "bower": "~1.2.8",
+    "grunt": "~0.4.2",
+    "grunt-cli": "~0.1.11",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.3.2",
+    "grunt-contrib-watch": "*",
+    "grunt-macreload": "*",
+    "grunt-css": "~0.5.4",
+    "grunt-markdown": "~0.5.0",
+    "grunt-angular-gettext": "^0.2.15"
   }
 }
