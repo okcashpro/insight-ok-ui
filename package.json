@@ -1,8 +1,8 @@
 {
-  "name": "insight-ui",
-  "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the Okcash network and build your own services with it.",
-  "version": "0.4.0",
-  "repository": "git://github.com/okcashpro/insight-ui.git",
+  "name": "insight-ok-ui",
+  "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the litecoin network and build your own services with it.",
+  "version": "0.4.6",
+  "repository": "git://github.com/okcashpro/insight-ok-ui.git",
   "contributors": [
     {
       "name": "Matias Alejo Garcia",
@@ -30,21 +30,20 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/okcashpro/insight-ui/issues"
+    "url": "https://github.com/okcashpro/insight-ok-ui/issues"
   },
-  "homepage": "https://github.com/okcashpro/insight-ui",
+  "homepage": "https://github.com/okcashpro/insight-ok-ui",
   "license": "MIT",
   "keywords": [
     "insight",
     "blockchain",
     "blockexplorer",
     "okcash",
-    "bitcore",
+    "okcore",
     "front-end"
   ],
-  "bitcoreNode": "bitcore-node",
-  "dependencies": {
-  },
+  "bitcoreNode": "okcore-node",
+  "dependencies": {},
   "devDependencies": {
     "bower": "~1.2.8",
     "grunt": "~0.4.2",

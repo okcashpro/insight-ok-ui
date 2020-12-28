@@ -23,7 +23,7 @@ angular.module('insight.currency').controller('CurrencyController',
         } else if (this.symbol === 'mOK') {
           this.factor = 1000;
           response = _roundFloat((value * this.factor), 5);
-        } else if (this.symbol === 'bits') {
+        } else if (this.symbol === 'toshis') {
           this.factor = 1000000;
           response = _roundFloat((value * this.factor), 2);
         } else {
@@ -49,7 +49,7 @@ angular.module('insight.currency').controller('CurrencyController',
         });
       } else if (currency === 'mOK') {
         $rootScope.currency.factor = 1000;
-      } else if (currency === 'bits') {
+      } else if (currency === 'toshis') {
         $rootScope.currency.factor = 1000000;
       } else {
         $rootScope.currency.factor = 1;

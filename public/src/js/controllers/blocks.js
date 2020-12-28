@@ -4,9 +4,6 @@ angular.module('insight.blocks').controller('BlocksController',
   function($scope, $rootScope, $routeParams, $location, Global, Block, Blocks, BlockByHeight) {
   $scope.global = Global;
   $scope.loading = false;
-  
-  
-  
 
   if ($routeParams.blockHeight) {
     BlockByHeight.get({
@@ -46,7 +43,8 @@ angular.module('insight.blocks').controller('BlocksController',
     var b = moment().startOf('day');
     return m.max().from(b);
   };
-  
+
+
   $scope.list = function() {
     $scope.loading = true;
 
